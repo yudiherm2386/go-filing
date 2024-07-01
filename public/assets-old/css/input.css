@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: "RedHatDisplay";
+		font-style: normal;
+		font-weight: 800;
+		font-display: swap;
+		src: url("../fonts/RedHatDisplay.ttf") format("truetype");
+	}
+	h1 {
+		@apply text-2xl font-bold text-[#1C1F38];
+	}
+	h2 {
+		@apply text-xl font-bold;
+	}
+	h4 {
+		@apply text-2xl;
+	}
+}
+
+.jstree-default .jstree-node {
+	padding: 5px 0;
+}
+.jstree-default .jstree-anchor {
+	line-height: 20px;
+}
